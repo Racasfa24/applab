@@ -19,7 +19,7 @@ public class CalculadoraController {
     }
 
     @GetMapping("/operacion")
-    public String suma(@RequestParam  double a, @RequestParam double b, @RequestParam String operacion) {
+    public String operacion(@RequestParam  double a, @RequestParam double b, @RequestParam String operacion) {
         return "El resultado de la operación es: "+calculadoraService.calcular(a, b, operacion);
     }
     
